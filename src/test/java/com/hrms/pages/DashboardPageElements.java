@@ -9,12 +9,8 @@ import org.openqa.selenium.support.PageFactory;
 import com.hrms.testbase.BaseClass;
 import com.hrms.utels.CommonMethods;
 
-public class DashboardPageElements extends CommonMethods{
-	
-	
-	
-	
-	
+public class DashboardPageElements extends CommonMethods {
+
 	@FindBy(id = "welcome")
 	public WebElement welcome;
 
@@ -26,24 +22,34 @@ public class DashboardPageElements extends CommonMethods{
 
 	@FindBy(xpath = "//a[@id='menu_pim_viewPimModule']")
 	public WebElement PIM;
-	
+
 	@FindBy(id = "menu_pim_viewEmployeeList")
 	public WebElement empListPage;
-	
+
 	@FindBy(id = "spanMessage")
 	public WebElement passEmpty;
-	
+
 	@FindBy(xpath = "//span[text()='Invalid credentials']")
 	public WebElement invalidUser;
-	
+
 	@FindBy(xpath = "//span[@id='spanMessage']")
 	public WebElement invalidPassword;
-	
+
 	@FindBy(xpath = "//span[@id='spanMessage']")
 	public WebElement userNameEmpty;
-	
+
+	@FindBy(xpath = "//a[@class='panelTrigger']")
+	public WebElement welcomJames;
+
 	@FindBy(xpath = "//div[@class='menu']/ul/li")
 	public List<WebElement> dashMenu;
+	
+	@FindBy(id = "middleName")
+	public WebElement middleName;
+	
+	@FindBy(xpath = "//div[@id='profile-pic']/h1")
+	public WebElement profilePic;
+	
 
 	public DashboardPageElements() {
 		PageFactory.initElements(BaseClass.driver, this);
@@ -53,8 +59,7 @@ public class DashboardPageElements extends CommonMethods{
 		jsClick(PIM);
 		jsClick(addEmp);
 	}
-	
-	
+
 //	@FindBy(id = "welcome")
 //	public WebElement welcome;
 //	

@@ -1,0 +1,549 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.hrms.runners.SmokeRunner" time="157.644" tests="7" errors="1" skipped="0" failures="1">
+  <properties>
+    <property name="gopherProxySet" value="false"/>
+    <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="sun.cpu.isalist" value=""/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/Users/dzhamshedumarov/eclipse-workspace/Hrms/target/test-classes:/Users/dzhamshedumarov/eclipse-workspace/Hrms/target/classes:/Users/dzhamshedumarov/.m2/repository/org/seleniumhq/selenium/selenium-java/3.141.59/selenium-java-3.141.59.jar:/Users/dzhamshedumarov/.m2/repository/org/seleniumhq/selenium/selenium-api/3.141.59/selenium-api-3.141.59.jar:/Users/dzhamshedumarov/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/3.141.59/selenium-chrome-driver-3.141.59.jar:/Users/dzhamshedumarov/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/3.141.59/selenium-edge-driver-3.141.59.jar:/Users/dzhamshedumarov/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/3.141.59/selenium-firefox-driver-3.141.59.jar:/Users/dzhamshedumarov/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/3.141.59/selenium-ie-driver-3.141.59.jar:/Users/dzhamshedumarov/.m2/repository/org/seleniumhq/selenium/selenium-opera-driver/3.141.59/selenium-opera-driver-3.141.59.jar:/Users/dzhamshedumarov/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/3.141.59/selenium-remote-driver-3.141.59.jar:/Users/dzhamshedumarov/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/3.141.59/selenium-safari-driver-3.141.59.jar:/Users/dzhamshedumarov/.m2/repository/org/seleniumhq/selenium/selenium-support/3.141.59/selenium-support-3.141.59.jar:/Users/dzhamshedumarov/.m2/repository/net/bytebuddy/byte-buddy/1.8.15/byte-buddy-1.8.15.jar:/Users/dzhamshedumarov/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/Users/dzhamshedumarov/.m2/repository/com/google/guava/guava/25.0-jre/guava-25.0-jre.jar:/Users/dzhamshedumarov/.m2/repository/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar:/Users/dzhamshedumarov/.m2/repository/org/checkerframework/checker-compat-qual/2.0.0/checker-compat-qual-2.0.0.jar:/Users/dzhamshedumarov/.m2/repository/com/google/errorprone/error_prone_annotations/2.1.3/error_prone_annotations-2.1.3.jar:/Users/dzhamshedumarov/.m2/repository/com/google/j2objc/j2objc-annotations/1.1/j2objc-annotations-1.1.jar:/Users/dzhamshedumarov/.m2/repository/org/codehaus/mojo/animal-sniffer-annotations/1.14/animal-sniffer-annotations-1.14.jar:/Users/dzhamshedumarov/.m2/repository/com/squareup/okhttp3/okhttp/3.11.0/okhttp-3.11.0.jar:/Users/dzhamshedumarov/.m2/repository/com/squareup/okio/okio/1.14.0/okio-1.14.0.jar:/Users/dzhamshedumarov/.m2/repository/org/apache/poi/poi-ooxml/4.1.2/poi-ooxml-4.1.2.jar:/Users/dzhamshedumarov/.m2/repository/org/apache/poi/poi/4.1.2/poi-4.1.2.jar:/Users/dzhamshedumarov/.m2/repository/commons-codec/commons-codec/1.13/commons-codec-1.13.jar:/Users/dzhamshedumarov/.m2/repository/org/apache/commons/commons-collections4/4.4/commons-collections4-4.4.jar:/Users/dzhamshedumarov/.m2/repository/org/apache/commons/commons-math3/3.6.1/commons-math3-3.6.1.jar:/Users/dzhamshedumarov/.m2/repository/com/zaxxer/SparseBitSet/1.2/SparseBitSet-1.2.jar:/Users/dzhamshedumarov/.m2/repository/org/apache/poi/poi-ooxml-schemas/4.1.2/poi-ooxml-schemas-4.1.2.jar:/Users/dzhamshedumarov/.m2/repository/org/apache/xmlbeans/xmlbeans/3.1.0/xmlbeans-3.1.0.jar:/Users/dzhamshedumarov/.m2/repository/org/apache/commons/commons-compress/1.19/commons-compress-1.19.jar:/Users/dzhamshedumarov/.m2/repository/com/github/virtuald/curvesapi/1.06/curvesapi-1.06.jar:/Users/dzhamshedumarov/.m2/repository/commons-io/commons-io/2.7/commons-io-2.7.jar:/Users/dzhamshedumarov/.m2/repository/io/cucumber/cucumber-junit/5.7.0/cucumber-junit-5.7.0.jar:/Users/dzhamshedumarov/.m2/repository/org/apiguardian/apiguardian-api/1.1.0/apiguardian-api-1.1.0.jar:/Users/dzhamshedumarov/.m2/repository/io/cucumber/cucumber-core/5.7.0/cucumber-core-5.7.0.jar:/Users/dzhamshedumarov/.m2/repository/io/cucumber/cucumber-gherkin/5.7.0/cucumber-gherkin-5.7.0.jar:/Users/dzhamshedumarov/.m2/repository/io/cucumber/cucumber-gherkin-vintage/5.7.0/cucumber-gherkin-vintage-5.7.0.jar:/Users/dzhamshedumarov/.m2/repository/io/cucumber/tag-expressions/2.0.4/tag-expressions-2.0.4.jar:/Users/dzhamshedumarov/.m2/repository/io/cucumber/cucumber-expressions/8.3.1/cucumber-expressions-8.3.1.jar:/Users/dzhamshedumarov/.m2/repository/io/cucumber/datatable/3.3.1/datatable-3.3.1.jar:/Users/dzhamshedumarov/.m2/repository/io/cucumber/cucumber-plugin/5.7.0/cucumber-plugin-5.7.0.jar:/Users/dzhamshedumarov/.m2/repository/io/cucumber/docstring/5.7.0/docstring-5.7.0.jar:/Users/dzhamshedumarov/.m2/repository/junit/junit/4.13/junit-4.13.jar:/Users/dzhamshedumarov/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/dzhamshedumarov/.m2/repository/io/cucumber/cucumber-java/5.7.0/cucumber-java-5.7.0.jar:/Users/dzhamshedumarov/.m2/repository/io/github/bonigarcia/webdrivermanager/3.8.1/webdrivermanager-3.8.1.jar:/Users/dzhamshedumarov/.m2/repository/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25.jar:/Users/dzhamshedumarov/.m2/repository/com/google/code/gson/gson/2.8.5/gson-2.8.5.jar:/Users/dzhamshedumarov/.m2/repository/org/apache/commons/commons-lang3/3.8.1/commons-lang3-3.8.1.jar:/Users/dzhamshedumarov/.m2/repository/org/apache/httpcomponents/httpclient/4.5.6/httpclient-4.5.6.jar:/Users/dzhamshedumarov/.m2/repository/org/apache/httpcomponents/httpcore/4.4.10/httpcore-4.4.10.jar:/Users/dzhamshedumarov/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/dzhamshedumarov/.m2/repository/org/rauschig/jarchivelib/1.0.0/jarchivelib-1.0.0.jar:/Users/dzhamshedumarov/.m2/repository/org/jsoup/jsoup/1.11.3/jsoup-1.11.3.jar:"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="user.timezone" value=""/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home/jre/lib"/>
+    <property name="sun.java.command" value="/Users/dzhamshedumarov/eclipse-workspace/Hrms/target/surefire/surefirebooter4712850606161321050.jar /Users/dzhamshedumarov/eclipse-workspace/Hrms/target/surefire 2020-06-10T18-52-45_916-jvmRun1 surefire5653462284199780111tmp surefire_06073171253175025053tmp"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="surefire.test.class.path" value="/Users/dzhamshedumarov/eclipse-workspace/Hrms/target/test-classes:/Users/dzhamshedumarov/eclipse-workspace/Hrms/target/classes:/Users/dzhamshedumarov/.m2/repository/org/seleniumhq/selenium/selenium-java/3.141.59/selenium-java-3.141.59.jar:/Users/dzhamshedumarov/.m2/repository/org/seleniumhq/selenium/selenium-api/3.141.59/selenium-api-3.141.59.jar:/Users/dzhamshedumarov/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/3.141.59/selenium-chrome-driver-3.141.59.jar:/Users/dzhamshedumarov/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/3.141.59/selenium-edge-driver-3.141.59.jar:/Users/dzhamshedumarov/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/3.141.59/selenium-firefox-driver-3.141.59.jar:/Users/dzhamshedumarov/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/3.141.59/selenium-ie-driver-3.141.59.jar:/Users/dzhamshedumarov/.m2/repository/org/seleniumhq/selenium/selenium-opera-driver/3.141.59/selenium-opera-driver-3.141.59.jar:/Users/dzhamshedumarov/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/3.141.59/selenium-remote-driver-3.141.59.jar:/Users/dzhamshedumarov/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/3.141.59/selenium-safari-driver-3.141.59.jar:/Users/dzhamshedumarov/.m2/repository/org/seleniumhq/selenium/selenium-support/3.141.59/selenium-support-3.141.59.jar:/Users/dzhamshedumarov/.m2/repository/net/bytebuddy/byte-buddy/1.8.15/byte-buddy-1.8.15.jar:/Users/dzhamshedumarov/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/Users/dzhamshedumarov/.m2/repository/com/google/guava/guava/25.0-jre/guava-25.0-jre.jar:/Users/dzhamshedumarov/.m2/repository/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar:/Users/dzhamshedumarov/.m2/repository/org/checkerframework/checker-compat-qual/2.0.0/checker-compat-qual-2.0.0.jar:/Users/dzhamshedumarov/.m2/repository/com/google/errorprone/error_prone_annotations/2.1.3/error_prone_annotations-2.1.3.jar:/Users/dzhamshedumarov/.m2/repository/com/google/j2objc/j2objc-annotations/1.1/j2objc-annotations-1.1.jar:/Users/dzhamshedumarov/.m2/repository/org/codehaus/mojo/animal-sniffer-annotations/1.14/animal-sniffer-annotations-1.14.jar:/Users/dzhamshedumarov/.m2/repository/com/squareup/okhttp3/okhttp/3.11.0/okhttp-3.11.0.jar:/Users/dzhamshedumarov/.m2/repository/com/squareup/okio/okio/1.14.0/okio-1.14.0.jar:/Users/dzhamshedumarov/.m2/repository/org/apache/poi/poi-ooxml/4.1.2/poi-ooxml-4.1.2.jar:/Users/dzhamshedumarov/.m2/repository/org/apache/poi/poi/4.1.2/poi-4.1.2.jar:/Users/dzhamshedumarov/.m2/repository/commons-codec/commons-codec/1.13/commons-codec-1.13.jar:/Users/dzhamshedumarov/.m2/repository/org/apache/commons/commons-collections4/4.4/commons-collections4-4.4.jar:/Users/dzhamshedumarov/.m2/repository/org/apache/commons/commons-math3/3.6.1/commons-math3-3.6.1.jar:/Users/dzhamshedumarov/.m2/repository/com/zaxxer/SparseBitSet/1.2/SparseBitSet-1.2.jar:/Users/dzhamshedumarov/.m2/repository/org/apache/poi/poi-ooxml-schemas/4.1.2/poi-ooxml-schemas-4.1.2.jar:/Users/dzhamshedumarov/.m2/repository/org/apache/xmlbeans/xmlbeans/3.1.0/xmlbeans-3.1.0.jar:/Users/dzhamshedumarov/.m2/repository/org/apache/commons/commons-compress/1.19/commons-compress-1.19.jar:/Users/dzhamshedumarov/.m2/repository/com/github/virtuald/curvesapi/1.06/curvesapi-1.06.jar:/Users/dzhamshedumarov/.m2/repository/commons-io/commons-io/2.7/commons-io-2.7.jar:/Users/dzhamshedumarov/.m2/repository/io/cucumber/cucumber-junit/5.7.0/cucumber-junit-5.7.0.jar:/Users/dzhamshedumarov/.m2/repository/org/apiguardian/apiguardian-api/1.1.0/apiguardian-api-1.1.0.jar:/Users/dzhamshedumarov/.m2/repository/io/cucumber/cucumber-core/5.7.0/cucumber-core-5.7.0.jar:/Users/dzhamshedumarov/.m2/repository/io/cucumber/cucumber-gherkin/5.7.0/cucumber-gherkin-5.7.0.jar:/Users/dzhamshedumarov/.m2/repository/io/cucumber/cucumber-gherkin-vintage/5.7.0/cucumber-gherkin-vintage-5.7.0.jar:/Users/dzhamshedumarov/.m2/repository/io/cucumber/tag-expressions/2.0.4/tag-expressions-2.0.4.jar:/Users/dzhamshedumarov/.m2/repository/io/cucumber/cucumber-expressions/8.3.1/cucumber-expressions-8.3.1.jar:/Users/dzhamshedumarov/.m2/repository/io/cucumber/datatable/3.3.1/datatable-3.3.1.jar:/Users/dzhamshedumarov/.m2/repository/io/cucumber/cucumber-plugin/5.7.0/cucumber-plugin-5.7.0.jar:/Users/dzhamshedumarov/.m2/repository/io/cucumber/docstring/5.7.0/docstring-5.7.0.jar:/Users/dzhamshedumarov/.m2/repository/junit/junit/4.13/junit-4.13.jar:/Users/dzhamshedumarov/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/dzhamshedumarov/.m2/repository/io/cucumber/cucumber-java/5.7.0/cucumber-java-5.7.0.jar:/Users/dzhamshedumarov/.m2/repository/io/github/bonigarcia/webdrivermanager/3.8.1/webdrivermanager-3.8.1.jar:/Users/dzhamshedumarov/.m2/repository/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25.jar:/Users/dzhamshedumarov/.m2/repository/com/google/code/gson/gson/2.8.5/gson-2.8.5.jar:/Users/dzhamshedumarov/.m2/repository/org/apache/commons/commons-lang3/3.8.1/commons-lang3-3.8.1.jar:/Users/dzhamshedumarov/.m2/repository/org/apache/httpcomponents/httpclient/4.5.6/httpclient-4.5.6.jar:/Users/dzhamshedumarov/.m2/repository/org/apache/httpcomponents/httpcore/4.4.10/httpcore-4.4.10.jar:/Users/dzhamshedumarov/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/dzhamshedumarov/.m2/repository/org/rauschig/jarchivelib/1.0.0/jarchivelib-1.0.0.jar:/Users/dzhamshedumarov/.m2/repository/org/jsoup/jsoup/1.11.3/jsoup-1.11.3.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/Users/dzhamshedumarov"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home/jre"/>
+    <property name="basedir" value="/Users/dzhamshedumarov/eclipse-workspace/Hrms"/>
+    <property name="file.separator" value="/"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="/Users/dzhamshedumarov/eclipse-workspace/Hrms/target/surefire/surefirebooter4712850606161321050.jar"/>
+    <property name="sun.boot.class.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home/jre/classes"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.runtime.version" value="1.8.0_231-b11"/>
+    <property name="user.name" value="dzhamshedumarov"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="10.15.5"/>
+    <property name="java.endorsed.dirs" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home/jre/lib/endorsed"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="/Users/dzhamshedumarov/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="/var/folders/fk/4kt1l4x124g2bl_d6h2djx100000gn/T/"/>
+    <property name="java.version" value="1.8.0_231"/>
+    <property name="user.dir" value="/Users/dzhamshedumarov/eclipse-workspace/Hrms"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.library.path" value="/Users/dzhamshedumarov/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="25.231-b11"/>
+    <property name="java.ext.dirs" value="/Users/dzhamshedumarov/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+  </properties>
+  <testcase name="Add Employee with first and lastname" classname="Add new Employee" time="22.448"/>
+  <testcase name="Add Employee without employee id" classname="Add new Employee" time="12.382">
+    <failure message="expected:&lt;[James Smith]&gt; but was:&lt;[-- Select --&#10;Albanian&#10;Algerian&#10;American&#10;Andorran&#10;Angolan&#10;Antiguans&#10;Argentinean&#10;Armenian&#10;Australian&#10;Austrian&#10;Azerbaijani&#10;Bahamian&#10;Bahraini&#10;Bangladeshi&#10;Barbadian&#10;Barbudans&#10;Batswana&#10;Belarusian&#10;Belgian&#10;Belizean&#10;Beninese&#10;Bhutanese&#10;Bolivian&#10;Bosnian&#10;Brazilian&#10;British&#10;Bruneian&#10;Bulgarian&#10;Burkinabe&#10;Burmese&#10;Burundian&#10;Cambodian&#10;Cameroonian&#10;Canadian&#10;Cape Verdean&#10;Central African&#10;Chadian&#10;Chilean&#10;Chinese&#10;Colombian&#10;Comoran&#10;Congolese&#10;Costa Rican&#10;Croatian&#10;Cuban&#10;Cypriot&#10;Czech&#10;Danish&#10;Djibouti&#10;Dominican&#10;Dutch&#10;East Timorese&#10;Ecuadorean&#10;Egyptian&#10;Emirian&#10;Equatorial Guinean&#10;Eritrean&#10;Estonian&#10;Ethiopian&#10;Fijian&#10;Filipino&#10;Finnish&#10;French&#10;Gabonese&#10;Gambian&#10;Georgian&#10;German&#10;Ghanaian&#10;Greek&#10;Grenadian&#10;Guatemalan&#10;Guinea-Bissauan&#10;Guinean&#10;Guyanese&#10;Haitian&#10;Herzegovinian&#10;Honduran&#10;Hungarian&#10;I-Kiribati&#10;Icelander&#10;Indian&#10;Indonesian&#10;Iranian&#10;Iraqi&#10;Irish&#10;Israeli&#10;Italian&#10;Ivorian&#10;Jamaican&#10;Japanese&#10;Jordanian&#10;Kazakhstani&#10;Kenyan&#10;Kittian and Nevisian&#10;Kuwaiti&#10;Kyrgyz&#10;Laotian&#10;Latvian&#10;Lebanese&#10;Liberian&#10;Libyan&#10;Liechtensteiner&#10;Lithuanian&#10;Luxembourger&#10;Macedonian&#10;Malagasy&#10;Malawian&#10;Malaysian&#10;Maldivan&#10;Malian&#10;Maltese&#10;Marshallese&#10;Mauritanian&#10;Mauritian&#10;Mexican&#10;Micronesian&#10;Moldovan&#10;Monacan&#10;Mongolian&#10;Moroccan&#10;Mosotho&#10;Motswana&#10;Mozambican&#10;Namibian&#10;Nauruan&#10;Nepalese&#10;New Zealander&#10;Nicaraguan&#10;Nigerian&#10;Nigerien&#10;North Korean&#10;Northern Irish&#10;Norwegian&#10;Omani&#10;Pakistani&#10;Palauan&#10;Panamanian&#10;Papua New Guinean&#10;papua yeni&#10;Paraguayan&#10;Peruvian&#10;Polish&#10;Portuguese&#10;Qatari&#10;Romanian&#10;Russian&#10;Rwandan&#10;Saint Lucian&#10;Salvadoran&#10;Samoan&#10;San Marinese&#10;Sao Tomean&#10;Saudi&#10;Scottish&#10;Senegalese&#10;Serbian&#10;Seychellois&#10;Sierra Leonean&#10;Singaporean&#10;Slovakian&#10;Slovenian&#10;Solomon Islander&#10;Somali&#10;South African&#10;South Korean&#10;Spanish&#10;Sri Lankan&#10;Sudanese&#10;Surinamer&#10;Swazi&#10;Swedish&#10;Swiss&#10;Syrian&#10;Taiwanese&#10;Tajik&#10;Tanzanian&#10;Thai&#10;Togolese&#10;Tongan&#10;Trinidadian or Tobagonian&#10;Tunisian&#10;Turkish&#10;Tuvaluan&#10;Ugandan&#10;Ukrainian&#10;Uruguayan&#10;Uzbekistani&#10;Venezuelan&#10;Vietnamese&#10;Welsh&#10;Yemenite&#10;Zambian&#10;Zimbabwean]&gt;" type="org.junit.ComparisonFailure"><![CDATA[org.junit.ComparisonFailure: 
+expected:<[James Smith]> but was:<[-- Select --
+Albanian
+Algerian
+American
+Andorran
+Angolan
+Antiguans
+Argentinean
+Armenian
+Australian
+Austrian
+Azerbaijani
+Bahamian
+Bahraini
+Bangladeshi
+Barbadian
+Barbudans
+Batswana
+Belarusian
+Belgian
+Belizean
+Beninese
+Bhutanese
+Bolivian
+Bosnian
+Brazilian
+British
+Bruneian
+Bulgarian
+Burkinabe
+Burmese
+Burundian
+Cambodian
+Cameroonian
+Canadian
+Cape Verdean
+Central African
+Chadian
+Chilean
+Chinese
+Colombian
+Comoran
+Congolese
+Costa Rican
+Croatian
+Cuban
+Cypriot
+Czech
+Danish
+Djibouti
+Dominican
+Dutch
+East Timorese
+Ecuadorean
+Egyptian
+Emirian
+Equatorial Guinean
+Eritrean
+Estonian
+Ethiopian
+Fijian
+Filipino
+Finnish
+French
+Gabonese
+Gambian
+Georgian
+German
+Ghanaian
+Greek
+Grenadian
+Guatemalan
+Guinea-Bissauan
+Guinean
+Guyanese
+Haitian
+Herzegovinian
+Honduran
+Hungarian
+I-Kiribati
+Icelander
+Indian
+Indonesian
+Iranian
+Iraqi
+Irish
+Israeli
+Italian
+Ivorian
+Jamaican
+Japanese
+Jordanian
+Kazakhstani
+Kenyan
+Kittian and Nevisian
+Kuwaiti
+Kyrgyz
+Laotian
+Latvian
+Lebanese
+Liberian
+Libyan
+Liechtensteiner
+Lithuanian
+Luxembourger
+Macedonian
+Malagasy
+Malawian
+Malaysian
+Maldivan
+Malian
+Maltese
+Marshallese
+Mauritanian
+Mauritian
+Mexican
+Micronesian
+Moldovan
+Monacan
+Mongolian
+Moroccan
+Mosotho
+Motswana
+Mozambican
+Namibian
+Nauruan
+Nepalese
+New Zealander
+Nicaraguan
+Nigerian
+Nigerien
+North Korean
+Northern Irish
+Norwegian
+Omani
+Pakistani
+Palauan
+Panamanian
+Papua New Guinean
+papua yeni
+Paraguayan
+Peruvian
+Polish
+Portuguese
+Qatari
+Romanian
+Russian
+Rwandan
+Saint Lucian
+Salvadoran
+Samoan
+San Marinese
+Sao Tomean
+Saudi
+Scottish
+Senegalese
+Serbian
+Seychellois
+Sierra Leonean
+Singaporean
+Slovakian
+Slovenian
+Solomon Islander
+Somali
+South African
+South Korean
+Spanish
+Sri Lankan
+Sudanese
+Surinamer
+Swazi
+Swedish
+Swiss
+Syrian
+Taiwanese
+Tajik
+Tanzanian
+Thai
+Togolese
+Tongan
+Trinidadian or Tobagonian
+Tunisian
+Turkish
+Tuvaluan
+Ugandan
+Ukrainian
+Uruguayan
+Uzbekistani
+Venezuelan
+Vietnamese
+Welsh
+Yemenite
+Zambian
+Zimbabwean]>
+]]></failure>
+    <system-out><![CDATA[
+@smoke
+Scenario: Add Employee without employee id            # src/test/resources/features/AddEmployee.feature:15
+  Given user is logged with valid admin credentials   # com.hmrs.steps.LoginSteps.user_is_logged_with_valid_admin_credentials()
+  And user navigates to AddEmployeePage               # com.hmrs.steps.AddEmployeeSteps.user_navigates_to_AddEmployeePage()
+  When user enters employees first name and last name # com.hmrs.steps.AddEmployeeSteps.user_enters_employees_first_name_and_last_name()
+  And user deletes employee id                        # com.hmrs.steps.AddEmployeeSteps.user_deletes_employee_id()
+  And user clicks save button                         # com.hmrs.steps.AddEmployeeSteps.user_clicks_save_button()
+  Then employee is added successfully                 # com.hmrs.steps.AddEmployeeSteps.employee_is_added_successfully()
+      org.junit.ComparisonFailure: expected:<[James Smith]> but was:<[-- Select --
+Albanian
+Algerian
+American
+Andorran
+Angolan
+Antiguans
+Argentinean
+Armenian
+Australian
+Austrian
+Azerbaijani
+Bahamian
+Bahraini
+Bangladeshi
+Barbadian
+Barbudans
+Batswana
+Belarusian
+Belgian
+Belizean
+Beninese
+Bhutanese
+Bolivian
+Bosnian
+Brazilian
+British
+Bruneian
+Bulgarian
+Burkinabe
+Burmese
+Burundian
+Cambodian
+Cameroonian
+Canadian
+Cape Verdean
+Central African
+Chadian
+Chilean
+Chinese
+Colombian
+Comoran
+Congolese
+Costa Rican
+Croatian
+Cuban
+Cypriot
+Czech
+Danish
+Djibouti
+Dominican
+Dutch
+East Timorese
+Ecuadorean
+Egyptian
+Emirian
+Equatorial Guinean
+Eritrean
+Estonian
+Ethiopian
+Fijian
+Filipino
+Finnish
+French
+Gabonese
+Gambian
+Georgian
+German
+Ghanaian
+Greek
+Grenadian
+Guatemalan
+Guinea-Bissauan
+Guinean
+Guyanese
+Haitian
+Herzegovinian
+Honduran
+Hungarian
+I-Kiribati
+Icelander
+Indian
+Indonesian
+Iranian
+Iraqi
+Irish
+Israeli
+Italian
+Ivorian
+Jamaican
+Japanese
+Jordanian
+Kazakhstani
+Kenyan
+Kittian and Nevisian
+Kuwaiti
+Kyrgyz
+Laotian
+Latvian
+Lebanese
+Liberian
+Libyan
+Liechtensteiner
+Lithuanian
+Luxembourger
+Macedonian
+Malagasy
+Malawian
+Malaysian
+Maldivan
+Malian
+Maltese
+Marshallese
+Mauritanian
+Mauritian
+Mexican
+Micronesian
+Moldovan
+Monacan
+Mongolian
+Moroccan
+Mosotho
+Motswana
+Mozambican
+Namibian
+Nauruan
+Nepalese
+New Zealander
+Nicaraguan
+Nigerian
+Nigerien
+North Korean
+Northern Irish
+Norwegian
+Omani
+Pakistani
+Palauan
+Panamanian
+Papua New Guinean
+papua yeni
+Paraguayan
+Peruvian
+Polish
+Portuguese
+Qatari
+Romanian
+Russian
+Rwandan
+Saint Lucian
+Salvadoran
+Samoan
+San Marinese
+Sao Tomean
+Saudi
+Scottish
+Senegalese
+Serbian
+Seychellois
+Sierra Leonean
+Singaporean
+Slovakian
+Slovenian
+Solomon Islander
+Somali
+South African
+South Korean
+Spanish
+Sri Lankan
+Sudanese
+Surinamer
+Swazi
+Swedish
+Swiss
+Syrian
+Taiwanese
+Tajik
+Tanzanian
+Thai
+Togolese
+Tongan
+Trinidadian or Tobagonian
+Tunisian
+Turkish
+Tuvaluan
+Ugandan
+Ukrainian
+Uruguayan
+Uzbekistani
+Venezuelan
+Vietnamese
+Welsh
+Yemenite
+Zambian
+Zimbabwean]>
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at com.hmrs.steps.AddEmployeeSteps.employee_is_added_successfully(AddEmployeeSteps.java:49)
+	at ✽.employee is added successfully(file:///Users/dzhamshedumarov/eclipse-workspace/Hrms/src/test/resources/features/AddEmployee.feature:19)
+
+
+    Embedding Add Employee without employee id [image/png 118403 bytes]
+
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416}) on port 13732
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Jun 10, 2020 6:53:17 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="AddEmployee and create Login Credentials" classname="Add new Employee" time="21.868">
+    <error message="no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#personal_cmbNation&quot;}&#10;  (Session info: chrome=83.0.4103.97)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;Dzhamsheds-MacBook-Pro.local&apos;, ip: &apos;2605:e000:a8c3:7700:0:0:0:6%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.5&apos;, java.version: &apos;1.8.0_231&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.97, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: /var/folders/fk/4kt1l4x124g...}, goog:chromeOptions: {debuggerAddress: localhost:52870}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}&#10;Session ID: 7427a4e6349042f818a730001c307c5e&#10;*** Element info: {Using=id, value=personal_cmbNation}" type="org.openqa.selenium.NoSuchElementException"><![CDATA[org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"css selector","selector":"#personal_cmbNation"}
+  (Session info: chrome=83.0.4103.97)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Dzhamsheds-MacBook-Pro.local', ip: '2605:e000:a8c3:7700:0:0:0:6%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.5', java.version: '1.8.0_231'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.97, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: /var/folders/fk/4kt1l4x124g...}, goog:chromeOptions: {debuggerAddress: localhost:52870}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 7427a4e6349042f818a730001c307c5e
+*** Element info: {Using=id, value=personal_cmbNation}
+]]></error>
+    <system-out><![CDATA[
+@smoke
+Scenario: AddEmployee and create Login Credentials    # src/test/resources/features/AddEmployee.feature:22
+  Given user is logged with valid admin credentials   # com.hmrs.steps.LoginSteps.user_is_logged_with_valid_admin_credentials()
+  And user navigates to AddEmployeePage               # com.hmrs.steps.AddEmployeeSteps.user_navigates_to_AddEmployeePage()
+  When user enters employees first name and last name # com.hmrs.steps.AddEmployeeSteps.user_enters_employees_first_name_and_last_name()
+  And user clicks on create login checkbox            # com.hmrs.steps.AddEmployeeSteps.user_clicks_on_create_login_checkbox()
+  And user enters login credentials                   # com.hmrs.steps.AddEmployeeSteps.user_enters_login_credentials()
+  And user clicks save button                         # com.hmrs.steps.AddEmployeeSteps.user_clicks_save_button()
+  Then employee is added successfully                 # com.hmrs.steps.AddEmployeeSteps.employee_is_added_successfully()
+      org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#personal_cmbNation"}
+  (Session info: chrome=83.0.4103.97)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Dzhamsheds-MacBook-Pro.local', ip: '2605:e000:a8c3:7700:0:0:0:6%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.5', java.version: '1.8.0_231'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.97, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: /var/folders/fk/4kt1l4x124g...}, goog:chromeOptions: {debuggerAddress: localhost:52870}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 7427a4e6349042f818a730001c307c5e
+*** Element info: {Using=id, value=personal_cmbNation}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy17.getText(Unknown Source)
+	at com.hmrs.steps.AddEmployeeSteps.employee_is_added_successfully(AddEmployeeSteps.java:47)
+	at ✽.employee is added successfully(file:///Users/dzhamshedumarov/eclipse-workspace/Hrms/src/test/resources/features/AddEmployee.feature:27)
+
+
+    Embedding AddEmployee and create Login Credentials [image/png 96847 bytes]
+
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416}) on port 23055
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Jun 10, 2020 6:53:30 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="Adding multiple employees" classname="Add new Employee" time="27.08"/>
+  <testcase name="Adding multiple employees" classname="Add new Employee" time="30.182"/>
+  <testcase name="Adding multiple employees" classname="Add new Employee" time="17.462"/>
+  <testcase name="Adding multiple employees" classname="Add new Employee" time="23.857"/>
+</testsuite>

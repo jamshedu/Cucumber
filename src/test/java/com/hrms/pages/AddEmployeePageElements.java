@@ -6,6 +6,7 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.hrms.testbase.BaseClass;
 import com.hrms.utels.CommonMethods;
+import com.hrms.utels.ConfigsReader;
 
 public class AddEmployeePageElements extends CommonMethods{
 	@FindBy(xpath = "//a[@id='menu_pim_viewPimModule']")
@@ -27,7 +28,7 @@ public class AddEmployeePageElements extends CommonMethods{
 	public WebElement FirstName;
 	
 	@FindBy(id = "lastName")
-	public WebElement lastname;
+	public WebElement lastName;
 	
 	@FindBy(id = "employeeId")
 	public WebElement employeeId;
@@ -65,6 +66,9 @@ public class AddEmployeePageElements extends CommonMethods{
 	@FindBy(id = "personal_txtEmployeeId")
 	public WebElement idEmpoyee;
 	
+	@FindBy(id = "middleName")
+	public WebElement middleName;
+	
 	
 	
 //	@FindBy(id = "employeeId")
@@ -72,6 +76,12 @@ public class AddEmployeePageElements extends CommonMethods{
 
 	public AddEmployeePageElements() {
 		PageFactory.initElements(BaseClass.driver, this);
+	}
+	public void createEmpLoginCR() {
+		sendText(creditUserName, ConfigsReader.getProperty("empUserName"));
+		sendText(creditPassWord, ConfigsReader.getProperty("empPassword"));
+		sendText(credReEnterPassWord, ConfigsReader.getProperty("empPassword"));
+		click(buttonSave);
 	}
 	
 

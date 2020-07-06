@@ -93,3 +93,28 @@ Feature: Add new Employee
     #And user enters login creadentials
     #And user clicks save button
     #Then employee is added successfully
+    
+    
+    #Scenario: As an admin, I want to be able to add employees
+    #
+    #Given user enter valid Amin crediantial
+    #And user add employee in add employee page 
+    #And user view employee in employee list page
+    #When user search for specific employee 
+    #Then user able to see added aployee  
+    #
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
